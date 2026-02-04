@@ -10,59 +10,95 @@ const widthScreen = Dimensions.get('window').width;
 const heightScreen = Dimensions.get('window').height;
 
 const styles = StyleSheet.create({
-  headerContainer: {
-    marginTop: hp(2),
-    width: widthScreen / 1.12,
+  mainContainer: {
+    width: widthScreen,
     alignSelf: 'center',
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: "space-between",
-    marginBottom: hp(1),
+    justifyContent: "center",
+    backgroundColor: Colors.White,
+    height: hp(31)
+  },
+  headerContainer: {
+    width: widthScreen,
+    alignSelf: 'center',
+    justifyContent: 'center',
+    backgroundColor: Colors.Black,
+    height: hp(25)
   },
   headerWraper: {
+    width: widthScreen / 1.15,
+    alignSelf: 'center',
+    marginTop: hp(3),
     flexDirection: 'row',
     alignItems: 'center',
+    gap: hp(2),
+    marginBottom: hp(2),
   },
   userPicture: {
-    width: 48,
-    height: 48,
+    width: 56,
+    height: 56,
     borderRadius: 100,
-    borderWidth: 1,
-    borderColor: Colors.BorderColor,
   },
-  seperateWrap: {
-    marginLeft: hp(1)
-  },
+
   headTitle: {
-    fontFamily: 'Poppins-SemiBold',
-    fontSize: 18,
-    lineHeight: 22,
-    color: Colors.RichBlack,
+    fontFamily: 'ArialNova-Regular',
+    fontSize: hp(2),
+    color: Colors.White,
   },
 
   welcomeText: {
-    fontFamily: 'Poppins-Medium',
-    fontSize: 12,
-    lineHeight: 16,
-    color: Colors.Gray,
+    fontFamily: 'ArialNova-Regular',
+    fontSize: hp(1.6),
+    color: Colors.White,
+    marginTop: hp(0.3)
   },
-  iconWrapper: {
-    color: Colors.ShadyGray,
+  userPoints: {
+    fontFamily: 'ArialNova-Regular',
+    fontSize: hp(1.6),
+    color: Colors.DarkPink,
+    marginTop: hp(0.5)
   },
-  listIcons: {
-    width: 40,
-    height: 40,
+
+  cardContainer: {
+    width: '100%',
+    height: 142,
+    alignSelf: 'center',
+    marginTop: hp(-5),
+    zIndex: 1,
+  },
+  cardInnerWrap: {
+    marginTop: hp(2),
+    marginBottom: hp(2),
+    width: "80%",
     alignSelf: "center"
   },
-  dotIcon: {
-    width: 6,
-    height: 6,
-    borderRadius: 100,
-    backgroundColor: Colors.FlameOrange,
-    position: 'absolute',
-    right: 4,
-    top: 1,
-    zIndex: 1
-  }
+  cardHeader: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between'
+  },
+  cardInfoWrap: {
+    marginTop: hp(3),
+    alignItems: "flex-end",
+  },
+  cardIcon: {
+    width: 66.82,
+    height: 22.29
+  },
+  categoryText: {
+    fontFamily: 'ArialNova-Regular',
+    fontSize: 12,
+    color: Colors.DarkBlack,
+  },
+  cardNoText: {
+    fontFamily: 'ArialNova-Regular',
+    fontSize: 18,
+    color: Colors.DarkBlack,
+  },
+  expiryText: {
+    fontFamily: 'ArialNova-Regular',
+    fontSize: 12,
+    color: Colors.DarkBlack,
+    marginTop: hp(0.5)
+  },
 });
 export default styles;

@@ -143,7 +143,7 @@ export const BottomTabView = (props: any) => {
           let image;
           let name;
           if (route.name === 'HomeTab') {
-            image = Images.home;
+            image = focused ? Images.homeBold : Images.home;
             name = 'Home';
           }
           else if (route.name === 'BookingsTab') {
@@ -151,7 +151,7 @@ export const BottomTabView = (props: any) => {
             name = 'Bookings';
           }
           else if (route.name === 'RoomsTab') {
-            image = Images.room;
+            image = focused ? Images.roomBold : Images.room;
             name = 'Rooms';
           }
           else if (route.name === 'DealsTab') {
@@ -175,7 +175,7 @@ export const BottomTabView = (props: any) => {
                 }} />
               )} */}
               <Image source={image} style={{
-                marginTop: hp(1.5),
+                marginTop: hp(1.8),
                 width: 24,
                 height: 24,
                 tintColor: focused ? Colors.DarkPink : Colors.White

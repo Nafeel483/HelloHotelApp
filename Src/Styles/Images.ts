@@ -1,28 +1,49 @@
 const images = {
 
-  logo: require('../../assets/Icons/logo.png'),
-  iconLogo: require('../../assets/Icons/iconLogo.png'),
-  onboarding1: require('../../assets/Icons/onboarding1.png'),
-  onboarding2: require('../../assets/Icons/onboarding2.png'),
-  onboarding3: require('../../assets/Icons/onboarding3.png'),
-  google: require('../../assets/Icons/google.png'),
-  apple: require('../../assets/Icons/apple.png'),
- 
+  voucher: require('../../assets/Icons/voucher.png'),
+  inbox: require('../../assets/Icons/inbox.png'),
+  profile: require('../../assets/Icons/profile.png'),
+  redeem: require('../../assets/Icons/redeem.png'),
+  card: require('../../assets/Icons/card.png'),
+  // google: require('../../assets/Icons/google.png'),
+  // apple: require('../../assets/Icons/apple.png'),
+
   // onboarding1: require('../../assets/Icons/onboarding1.png'),
 
 
   // Bottom Icons
-  // home: require('../../assets/Icons/Bottom/home.png'),
-  // order: require('../../assets/Icons/Bottom/order.png'),
-  // insight: require('../../assets/Icons/Bottom/insight.png'),
-  // store: require('../../assets/Icons/Bottom/store.png'),
-  // profile: require('../../assets/Icons/Bottom/profile.png'),
+  home: require('../../assets/Icons/Bottom/home.png'),
+  homeBold: require('../../assets/Icons/Bottom/homeBold.png'),
+
+
+  booking: require('../../assets/Icons/Bottom/booking.png'),
+  // booking: require('../../assets/Icons/Bottom/booking.png'),
+
+  room: require('../../assets/Icons/Bottom/room.png'),
+  roomBold: require('../../assets/Icons/Bottom/roomBold.png'),
+
+  deal: require('../../assets/Icons/Bottom/deal.png'),
+  // booking: require('../../assets/Icons/Bottom/booking.png'),
+
+  more: require('../../assets/Icons/Bottom/more.png'),
+  // booking: require('../../assets/Icons/Bottom/booking.png'),
 
   // DummyData
-  // story1: require('../../assets/DummyData/story1.png'),
-  // story2: require('../../assets/DummyData/story2.png'),
-  // story3: require('../../assets/DummyData/story3.png'),
+  user1: require('../../assets/DummyData/user1.png'),
+  card1: require('../../assets/DummyData/card1.png'),
+  deal1: require('../../assets/DummyData/deal1.png'),
+  deal2: require('../../assets/DummyData/deal2.png'),
+  room1: require('../../assets/DummyData/room1.png'),
+  room2: require('../../assets/DummyData/room2.png'),
+  update1: require('../../assets/DummyData/update1.png'),
+  update2: require('../../assets/DummyData/update2.png'),
+  update3: require('../../assets/DummyData/update3.png'),
+  // deal1: require('../../assets/DummyData/deal1.png'),
+  // deal1: require('../../assets/DummyData/deal1.png'),
+  // deal1: require('../../assets/DummyData/deal1.png'),
+  // deal1: require('../../assets/DummyData/deal1.png'),
+  // deal1: require('../../assets/DummyData/deal1.png'),
 
- 
+
 };
 export default images;

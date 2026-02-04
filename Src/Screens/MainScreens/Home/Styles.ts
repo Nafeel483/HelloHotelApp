@@ -20,40 +20,32 @@ const styles = StyleSheet.create({
   scrollWrapper: {
     marginBottom: hp('12%')
   },
-  // headerContainer: {
-  //   width: widthScreen,
-  //   alignSelf: "center",
-  //   marginTop: hp(1.5),
-  //   height: 70,
-  //   justifyContent: "center",
-  //   alignItems: "center",
-  //   borderTopWidth: 1,
-  //   borderBottomWidth: 1,
-  //   marginBottom: hp(1)
-  // },
-  // headerWrapper: {
-  //   width: widthScreen / 1.12,
-  //   alignSelf: "center",
-  //   flexDirection: "row",
-  //   justifyContent: "space-between",
-  //   alignItems: "center",
-  // },
-  // backIcon: {
-  //   width: hp(4),
-  //   height: hp(4),
-  //   borderRadius: 10,
-  //   justifyContent: "center",
-  //   alignItems: "center",
-  //   borderWidth: 1,
+  contentContainer: {
+    width: widthScreen,
+    alignSelf: "center",
+    backgroundColor: Colors.White
+  },
+  listContainner: {
+    width: widthScreen / 1.15,
+    alignSelf: "center",
+    flexDirection: "row",
+    justifyContent: "space-between",
+    alignItems: "center",
+    marginTop: hp(2),
+  },
 
-  // },
-  // headerText: {
-  //   fontSize: 16,
-  //   fontFamily: "ArialNova-Bold",
-  // },
-  // empty: {
-  //   width: hp(4),
-  // },
+  listTitle: {
+    fontSize: 18,
+    fontFamily: "ArialNova-Bold",
+    color: Colors.BlackPearl
+  },
+  popularWrapper: {
+    width: widthScreen / 1.08,
+    alignSelf: "flex-end",
+    alignItems: 'center',
+    justifyContent: "center",
+    marginBottom: hp(2)
+  },
 
 });
 export default styles;
