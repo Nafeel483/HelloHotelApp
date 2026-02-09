@@ -12,7 +12,9 @@ const colors = {
   BlackPearl: "#212529",
   Red: "#E84B00",
   Divider: "#EFF1F2",
-  // CharcoalDark: "#061028",
+  FlashGray: "#F0F0F0",
+  Blue: "#007AFF",
+  Green: "#27AE60",
 };
 
 export default colors;

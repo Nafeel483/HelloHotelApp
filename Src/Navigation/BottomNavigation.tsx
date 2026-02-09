@@ -20,6 +20,7 @@ import Bookings from "../Screens/MainScreens/Bookings";
 import Rooms from "../Screens/MainScreens/Rooms";
 import Deals from '../Screens/MainScreens/Deals';
 import More from "../Screens/MainScreens/More";
+import RoomAvailability from '../Screens/MainScreens/Rooms/RoomAvailability';
 
 const widthScreen = Dimensions.get('window').width;
 
@@ -34,16 +35,13 @@ type BottomStackParamList = {
 
 type HomeStackParamList = {
   Home: undefined,
-  // MyMore: undefined,
-  // UsersMore: undefined,
-  // CommentPost: undefined,
-  // Earnings: undefined
 };
 type BookingsStackParamList = {
   Bookings: undefined,
 };
 type RoomsStackParamList = {
   Rooms: undefined,
+  RoomAvailability: undefined,
 };
 type DealsStackParamList = {
   Deals: undefined,
@@ -74,7 +72,7 @@ export const HomeStacks = () => {
         headerShown: false,
       }}>
       <HomeStack.Screen name="Home" component={Home} />
-      {/* <HomeStack.Screen name="MyMore" component={MyMore} />
+      {/* 
       <HomeStack.Screen name="UsersMore" component={UsersMore} />
       <HomeStack.Screen name="CommentPost" component={CommentPost} /> */}
 
@@ -101,7 +99,7 @@ export const RoomsStacks = () => {
         headerShown: false,
       }}>
       <RoomsStack.Screen name="Rooms" component={Rooms} />
-
+      <RoomsStack.Screen name="RoomAvailability" component={RoomAvailability} />
     </RoomsStack.Navigator>
   );
 }

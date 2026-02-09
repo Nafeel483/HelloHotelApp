@@ -2,19 +2,16 @@ import React, { useState, useContext } from 'react';
 import {
   StatusBar,
   View,
-  Image,
   Text,
   TouchableOpacity,
-  Platform,
   ScrollView
 } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import Styles from './Styles';
-import Images from '../../../Styles/Images';
+import Colors from '../../../Styles/Colors';
 import TabsList from '../../../Components/TabsList';
 import HomeHeader from '../../../Components/HomeHeader';
 import Feather from '@expo/vector-icons/Feather';
-import Colors from '../../../Styles/Colors';
 import DealsCard from '../../../Components/DealsCard';
 import RoomCard from '../../../Components/RoomCard';
 import UpdateCard from '../../../Components/UpdateCard';
@@ -57,14 +54,14 @@ const Home = (props: any) => {
                 </ScrollView>
               </View>
 
-               {/* Updates */}
+              {/* Updates */}
               <View style={Styles.listContainner}>
                 <Text style={Styles.listTitle}>{`Updates`}</Text>
                 <TouchableOpacity>
                   <Feather name="chevron-right" size={24} color={Colors.Grey} />
                 </TouchableOpacity>
               </View>
-               {
+              {
                 HOME_DATA?.updatesData?.map((item, keyID) => (<UpdateCard key={keyID} navigation={navigation} item={item} keyID={keyID} />))
               }
 

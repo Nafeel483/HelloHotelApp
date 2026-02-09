@@ -5,8 +5,10 @@ const images = {
   profile: require('../../assets/Icons/profile.png'),
   redeem: require('../../assets/Icons/redeem.png'),
   card: require('../../assets/Icons/card.png'),
-  // google: require('../../assets/Icons/google.png'),
-  // apple: require('../../assets/Icons/apple.png'),
+  people: require('../../assets/Icons/people.png'),
+  bed: require('../../assets/Icons/bed.png'),
+  size: require('../../assets/Icons/size.png'),
+  // bed: require('../../assets/Icons/bed.png'),
 
   // onboarding1: require('../../assets/Icons/onboarding1.png'),
 
@@ -38,11 +40,13 @@ const images = {
   update1: require('../../assets/DummyData/update1.png'),
   update2: require('../../assets/DummyData/update2.png'),
   update3: require('../../assets/DummyData/update3.png'),
-  // deal1: require('../../assets/DummyData/deal1.png'),
-  // deal1: require('../../assets/DummyData/deal1.png'),
-  // deal1: require('../../assets/DummyData/deal1.png'),
-  // deal1: require('../../assets/DummyData/deal1.png'),
-  // deal1: require('../../assets/DummyData/deal1.png'),
+  promotePic: require('../../assets/DummyData/promotePic.png'),
+  room3: require('../../assets/DummyData/room3.png'),
+  room4: require('../../assets/DummyData/room4.png'),
+  room5: require('../../assets/DummyData/room5.png'),
+  // done: require('../../assets/DummyData/done.png'),
+  // room5: require('../../assets/DummyData/room5.png'),
+  // room5: require('../../assets/DummyData/room5.png'),
 
 
 };

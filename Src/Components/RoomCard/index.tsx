@@ -7,8 +7,6 @@ import {
   ImageBackground
 } from 'react-native';
 import Styles from './Styles';
-import Colors from '../../Styles/Colors';
-import Images from '../../Styles/Images';
 import { LinearGradient } from "expo-linear-gradient";
 
 
@@ -41,8 +39,6 @@ const RoomCard = (props: any) => {
           </View>
         </LinearGradient>
       </ImageBackground>
-
-
     </TouchableOpacity>
   );
 };
