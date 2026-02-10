@@ -6,7 +6,6 @@ const widthScreen = Dimensions.get('window').width;
 const heightScreen = Dimensions.get('window').height;
 
 const styles = StyleSheet.create({
-  
   safeAreaContainer: {
     flex: 1,
     backgroundColor: Colors.White

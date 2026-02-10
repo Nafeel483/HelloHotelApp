@@ -19,11 +19,7 @@ const DealsCard = (props: any) => {
 
   return (
     <TouchableOpacity key={keyID}
-      // onPress={() => {
-      //   navigation.navigate("RestaurantView", {
-      //     passData: item
-      //   })
-      // }}
+      onPress={() => { navigation.navigate("DealCheckOut") }}
       style={Styles.cardMainContainer}>
       <Image source={item?.thumbnail} style={Styles.headImageWrapper} />
       <Text style={Styles.titleText}>{item?.dealTitle}</Text>

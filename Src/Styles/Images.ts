@@ -8,7 +8,7 @@ const images = {
   people: require('../../assets/Icons/people.png'),
   bed: require('../../assets/Icons/bed.png'),
   size: require('../../assets/Icons/size.png'),
-  // bed: require('../../assets/Icons/bed.png'),
+  creditcard: require('../../assets/Icons/creditcard.png'),
 
   // onboarding1: require('../../assets/Icons/onboarding1.png'),
 

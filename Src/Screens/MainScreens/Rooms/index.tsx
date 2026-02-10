@@ -39,7 +39,6 @@ const Deals = (props: any) => {
     <SafeAreaView style={[Styles.safeAreaContainer]} edges={{ top: "off" }}>
       <StatusBar barStyle={'light-content'} />
       <View style={Styles.mainContainer}>
-
         {/* Header */}
         <View style={Styles.headerContainer}>
           <View style={Styles.headerWrapper}>
@@ -157,8 +156,7 @@ const Deals = (props: any) => {
                   }} />
               </View>
             </View>
-
-
+            
             {/* Button */}
             <TouchableOpacity onPress={() => { navigation.navigate("RoomAvailability") }}
               style={Styles.buttonContainer}>

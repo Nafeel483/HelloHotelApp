@@ -17,7 +17,7 @@ export type Props = {
   navigation: any;
 };
 
-const Rooms = (props: any) => {
+const More = (props: any) => {
   const { navigation, route } = props;
   // const dataItem = route?.params?.itemData
 
@@ -33,4 +33,4 @@ const Rooms = (props: any) => {
   );
 }
 
-export default Rooms;
+export default More;

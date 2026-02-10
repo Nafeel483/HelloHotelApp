@@ -8,8 +8,8 @@ LogBox.ignoreLogs(["AddInstanceForFactory"]);
 
 export default function Root() {
   const [fontsLoaded] = useFonts({
-    "ArialNova-Regular": require("../assets/Fonts/ArialNova-Light.ttf"),
-    "ArialNova-Medium": require("../assets/Fonts/ArialNova.ttf"),
+    "ArialNova-Regular": require("../assets/Fonts/ArialNova.ttf"),
+    "ArialNova-Medium": require("../assets/Fonts/ArialNova-Light.ttf"),
     "ArialNova-Bold": require("../assets/Fonts/ArialNova-Bold.ttf"),
   });
   

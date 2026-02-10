@@ -15,6 +15,7 @@ const colors = {
   FlashGray: "#F0F0F0",
   Blue: "#007AFF",
   Green: "#27AE60",
+  MidBlack: "#12090C",
 };
 
 export default colors;
