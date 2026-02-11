@@ -40,14 +40,13 @@ const styles = StyleSheet.create({
   },
   cancel: {
     fontSize: 16,
-    color: "red",
+    color: Colors.Black,
     fontFamily: 'ArialNova-Regular',
   },
   ok: {
-    fontSize: 16,
+   fontSize: 16,
+    color: Colors.Black,
     fontFamily: 'ArialNova-Regular',
-    color: "green",
-    fontWeight: "600",
   },
 
 

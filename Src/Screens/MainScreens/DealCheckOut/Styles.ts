@@ -238,6 +238,7 @@ const styles = StyleSheet.create({
 
   sliderStyle: {
     width: "100%",
+    alignSelf:"center",
     height: 40,
     borderRadius: 10,
     // marginTop: hp(1.3),

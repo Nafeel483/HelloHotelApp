@@ -231,16 +231,15 @@ const DealCheckOut = (props: any) => {
                   <Text style={Styles.balanceText}>{"30 Points"}</Text>
                 </View>
                 <Slider
-                  // containerStyle={Styles.sliderContainer}
                   style={Styles.sliderStyle}
                   minimumValue={0}
                   maximumValue={50}
                   step={10}
                   value={pointRedeem}
                   onValueChange={(value: any) => { setPointRedeem(value) }}
-                  // renderThumbComponent={CustomThumb} 
+                  thumbTintColor={Colors.DarkPink}
                   minimumTrackTintColor={Colors.DarkPink}
-                  maximumTrackTintColor={Colors.Divider} />
+                  maximumTrackTintColor={Colors.Grey} />
               </View>
             </View>
 

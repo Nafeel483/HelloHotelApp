@@ -31,31 +31,48 @@ export default function ModalDatePicker({
     if (selected) setTempDate(selected);
   };
 
+  const handleChangeDate = (_: any, selected?: Date) => {
+    if (selected) {
+      setTempDate(selected);
+      onConfirm(selected)
+    }
+  };
+
   return (
-    <Modal transparent visible={visible} animationType="fade">
-      <View style={Styles.overlay}>
-        <View style={Styles.container}>
-          <Text style={Styles.title}>{`Select ${mode}`}</Text>
+    Platform.OS === 'ios' ? (
+      <Modal transparent visible={visible} animationType="fade">
+        <View style={Styles.overlay}>
+          <View style={Styles.container}>
+            <Text style={Styles.title}>{`Select ${mode}`}</Text>
 
-          <DateTimePicker
-            value={tempDate}
-            mode={mode}
-            display={"spinner"}
-            onChange={handleChange}
-            style={{ alignSelf: "center" }}
-          />
+            <DateTimePicker
+              value={tempDate}
+              mode={mode}
+              display={"spinner"}
+              onChange={handleChange}
+              style={{ alignSelf: "center" }}
+            />
 
-          <View style={Styles.actions}>
-            <Pressable onPress={onCancel}>
-              <Text style={Styles.cancel}>{'Cancel'}</Text>
-            </Pressable>
+            <View style={Styles.actions}>
+              <Pressable onPress={onCancel}>
+                <Text style={Styles.cancel}>{'CANCEL'}</Text>
+              </Pressable>
 
-            <Pressable onPress={() => onConfirm(tempDate)}>
-              <Text style={Styles.ok}>{"OK"}</Text>
-            </Pressable>
+              <Pressable onPress={() => onConfirm(tempDate)}>
+                <Text style={Styles.ok}>{"OK"}</Text>
+              </Pressable>
+            </View>
           </View>
         </View>
-      </View>
-    </Modal>
+      </Modal>)
+      : (
+        <DateTimePicker
+          value={tempDate}
+          mode={mode}
+          display={"spinner"}
+          onChange={handleChangeDate}
+          style={{ alignSelf: "center" }}
+        />
+      )
   );
 }
